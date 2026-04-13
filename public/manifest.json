@@ -1,0 +1,18 @@
+{
+  "short_name": "OVERPACE",
+  "name": "OVERPACE - Toxic Productivity Screening",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#4F46E5",
+  "description": "Digital screening & prevention tool for toxic productivity",
+  "categories": ["health", "productivity", "wellness"]
+}
