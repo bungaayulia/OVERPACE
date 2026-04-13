@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4F46E5" />
+    <meta
+      name="description"
+      content="OVERPACE - Digital screening & prevention tool for toxic productivity. Cek kondisi produktivitasmu dan dapatkan rencana intervensi personal."
+    />
+    <meta name="keywords" content="toxic productivity, burnout, mental health, wellness, assessment, screening" />
+    <meta name="author" content="bungaayulia" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="OVERPACE - Cek Toxic Productivity Mu" />
+    <meta property="og:description" content="Digital screening & prevention tool untuk mengidentifikasi dan mencegah toxic productivity." />
+    <meta property="og:url" content="https://overpace.vercel.app" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OVERPACE - Cek Toxic Productivity Mu" />
+    <meta name="twitter:description" content="Digital screening & prevention tool untuk mengidentifikasi dan mencegah toxic productivity." />
+    
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+          'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+          'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+      }
+
+      #root {
+        width: 100%;
+        height: 100%;
+      }
+
+      .overpace-loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .overpace-loading-content {
+        text-align: center;
+      }
+
+      .overpace-logo {
+        font-size: 64px;
+        margin-bottom: 20px;
+        animation: bounce 2s infinite;
+      }
+
+      .overpace-loading-title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        letter-spacing: -0.5px;
+      }
+
+      .overpace-loading-subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 0.9;
+        margin-bottom: 30px;
+      }
+
+      .overpace-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .overpace-no-js {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #fee2e2;
+        color: #991b1b;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .overpace-no-js h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .overpace-no-js p {
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 500px;
+      }
+    </style>
+    
+    <title>OVERPACE - Cek Kondisi Produktivitasmu | Toxic Productivity Screening Tool</title>
+  </head>
+
+  <body>
+    <noscript>
+      <div class="overpace-no-js">
+        <h1>⚠️ JavaScript Diperlukan</h1>
+        <p>
+          OVERPACE memerlukan JavaScript untuk berfungsi. Silakan aktifkan JavaScript di browser Anda dan coba lagi.
+        </p>
+      </div>
+    </noscript>
+
+    <div id="root">
+      <div class="overpace-loading">
+        <div class="overpace-loading-content">
+          <div class="overpace-logo">🌐</div>
+          <h1 class="overpace-loading-title">OVERPACE</h1>
+          <p class="overpace-loading-subtitle">Digital Screening & Prevention Tool</p>
+          <div class="overpace-spinner"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
